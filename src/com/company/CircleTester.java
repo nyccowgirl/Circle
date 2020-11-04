@@ -74,11 +74,28 @@ public class CircleTester {
         double areaCircle8 = circle8.getArea();
         System.out.println("C8 x: " + circle8.getX() + "\tC8 y: " + circle8.getY() + "\tC8 area: " + areaCircle8);
 
+        // Circle 9:
+        Circle circle9 = new Circle();
+        circle9.setX(2);
+        circle9.setY(2);
+        circle9.setRadius(4);
+        double areaCircle9 = circle9.getArea();
+        System.out.println("C9 x: " + circle9.getX() + "\tC9 y: " + circle9.getY() + "\tC9 area: " + areaCircle9);
+
+        // Circle 10:
+        Circle circle10 = new Circle();
+        circle10.setX(6);
+        circle10.setY(6);
+        circle10.setRadius(2);
+        double areaCircle10 = circle10.getArea();
+        System.out.println("C10 x: " + circle10.getX() + "\tC10 y: " + circle10.getY() + "\tC10 area: " + areaCircle10);
+
         // Test overlapping
         System.out.println("Overlap (C1 + C2)? " + circle1.doesOverlap(circle2));
         System.out.println("Overlap (C3 + C4)? " + circle3.doesOverlap(circle4));
         System.out.println("Overlap (C5 + C6)? " + circle5.doesOverlap(circle6));
         System.out.println("Overlap (C7 + C8)? " + circle7.doesOverlap(circle8));
+        System.out.println("Overlap (C9 + C10)? " + circle9.doesOverlap(circle10));
     }
 }
 
@@ -92,18 +109,13 @@ C5 x: -10.0	C5 y: 8.0	C5 area: 2827.3671
 C6 x: 14.0	C6 y: -24.0	C6 area: 314.1519
 C7 x: 3.0	C7 y: 3.0	C7 area: 3.141519
 C8 x: 4.0	C8 y: 2.0	C8 area: 3.141519
-distance: 17.804493814764857
-radius sum: 13.0
+C9 x: 2.0	C9 y: 2.0	C9 area: 50.264304
+C10 x: 6.0	C10 y: 6.0	C10 area: 12.566076
 Overlap (C1 + C2)? false
-distance: 28.178005607210743
-radius sum: 22.0
 Overlap (C3 + C4)? false
-distance: 40.0
-radius sum: 40.0
 Overlap (C5 + C6)? true
-distance: 1.4142135623730951
-radius sum: 2.0
 Overlap (C7 + C8)? true
+Overlap (C9 + C10)? true
 
 Process finished with exit code 0
  */

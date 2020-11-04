@@ -92,8 +92,6 @@ public class Circle {
         double distance;
 
         distance = Math.pow(Math.pow((x - otherCircle.x), 2) + Math.pow((y - otherCircle.y), 2), 0.5);
-        System.out.println("distance: " + distance);
-        System.out.println("radius sum: " + (radius + otherCircle.getRadius()));
         return (radius + otherCircle.getRadius()) >= distance;
     }
 }
